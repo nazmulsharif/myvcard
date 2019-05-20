@@ -1,0 +1,401 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: tahoma;
+}
+body{
+	background-color: #7D3241;
+}
+.full-box{
+	width: 900px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	height: 500px;
+	background-color: #651f2b;
+	box-shadow: 0px 0px 100px black;
+
+}
+.inner-left{
+	width:25%;
+	float: left;
+}
+.inner-left img{
+	width: 100%;
+	height: 175px;
+}
+.inner-left h1{
+	font-size: 19px;
+	background-color: #3da3a7;
+	text-align: center;
+	font-family: 'Righteous', cursive;
+}
+.inner-left ul{
+	margin: 0 10px 0 20px;
+	text-align: right;
+}
+.inner-left ul li{
+	border-bottom: 1px dotted blue;
+}
+.inner-left ul li a{
+	
+}
+.inner-right{
+	width: 75%;
+	float: left;
+	box-sizing: border-box;
+	
+}
+.inner-right .tabs{
+	width: 100%;
+
+}
+.tabs ul{
+	background-color: #fff;
+
+}
+.tabs ul li{
+	display: inline-block;
+	width: 170px;
+	height: 150px;
+	margin: 0;
+	border-radius: 5px;
+
+}
+.tabs ul li a{
+	width: 100%;
+	margin-top: 25%;
+	text-align: center;
+
+}
+.tabs ul li a i{
+	font-size: 40px;
+	
+}
+.active{
+	background-color: #7F3846!important;
+}
+.ui-tabs .ui-tabs-nav li:nth-child(1){
+	background-color: #539836;
+}
+.ui-tabs .ui-tabs-nav li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: 0;
+    margin: -1px -0.8em 0 0;
+    border-bottom-width: 0;
+    padding: 0px;
+    white-space: nowrap;
+}
+#about{
+	overflow: scroll;
+	height: 335px;
+}
+#about h1{
+	font-size: 30px;
+	font-family: 'Baloo Bhai', cursive;
+}
+#about h2{
+	font-size: 15px;
+	text-align: center;
+	background-color: blue;
+	color: #fff;
+	font-family: 'Righteous', cursive;
+}
+#about p{
+	font-size: 12px;
+}
+
+.grid{
+	width: 100%;
+}
+.research{
+	width: 33.3%;
+	float: left;
+}
+.grid p{
+	font-size: 15px!important;
+}
+.Design{
+	width: 33.3%;
+	float: left;
+}
+.Work{
+	width: 33.3%;
+	float: left;
+}
+#documents{
+	height: 335px;
+	overflow: scroll;
+	
+}
+#documents h1{
+	background-color: blue;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Baloo Bhai', cursive;
+}
+#documents h2{
+	font-size: 15px;
+	color: green;
+	font-family: 'Righteous', cursive;
+
+}
+#documents p{
+	font-size: 15px;
+}
+#documents a{
+
+}
+#experience{
+	height: 335px;
+	overflow: scroll;
+}
+#experience h1{
+	font-size: 20px;
+	background-color: blue;
+	color: #fff;
+	font-family: 'Baloo Bhai', cursive;
+}
+#experience p{
+	font-size: 15px;
+}
+#experience a{
+	text-align: center;
+}
+
+#experience img{
+	width: 150px;
+	height: 100px;
+}
+#experience a{
+	display: block;
+}
+#home{
+	height: 335px;
+	overflow: scroll;
+}
+#home h1{
+	font-size: 20px;
+	background-color: blue;
+	color: #fff;
+}
+#home input{
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px 0;
+}
+textarea{
+	width: 50%;
+	margin-top: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.full-box:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* RESPONSIVE SITE */
+@media screen and (min-width: 320px) and (max-width: 426px){
+	.full-box{
+		width: 320px;
+		height:378px ;
+	}
+	.inner-left{
+		width: 20%;
+	}
+	.inner-left h1{
+		font-size: 15px;
+	}
+	.inner-left ul li{
+		font-size: 12px;
+	}
+	.inner-left img{
+		width: 80px;
+		height: 60px;
+	}
+	.inner-right{
+		height: 70%!important;
+	}
+	.inner-right .tabs{
+		width: 100%;
+	}
+	.inner-right .tabs ul li{
+		width: 65px;
+		height: 30px;
+
+	}
+	.inner-right .tabs ul li a i{
+	font-size: 15px;
+
+
+	}
+	.inner-right .tabs ul li a {
+		
+		margin-top: 0;
+	}
+	#about h1{
+		font-size: 15px;
+	}
+	#about h2{
+		font-size: 10px;
+	}
+	.research p,.Design p,.Work p{
+		font-size: 10px!important;
+	}
+}
+@media screen and (min-width: 427px) and (max-width: 767px){
+	.full-box{
+		width: 427px;
+		height: 382px;
+	}
+	.inner-left{
+		width: 20%;
+	}
+	.inner-left h1{
+		font-size: 20px;
+	}
+	.inner-left ul li{
+		font-size: 12px;
+	}
+	.inner-left img{
+		width: 100%;
+		height: 60px;
+	}
+	.inner-right{
+		height: 70%!important;
+	}
+	.inner-right .tabs{
+		width: 100%;
+	}
+	.inner-right .tabs ul li{
+		width: 85px;
+		height: 35px;
+
+	}
+	.inner-right .tabs ul li a i{
+	font-size: 20px;
+	margin-top: 0;
+
+	}
+	.inner-right .tabs ul li a {
+		
+		margin-top: 0;
+	}
+	#about h1{
+		font-size: 15px;
+	}
+	#about h2{
+		font-size: 10px;
+	}
+	.research p,.Design p,.Work p{
+		font-size: 12px!important;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	.full-box{
+		width: 768px;
+		height: 400px;
+	}
+	.inner-left{
+		width: 20%;
+	}
+	.inner-left h1{
+		font-size: 20px;
+	}
+	.inner-left ul li{
+		font-size: 12px;
+	}
+	.inner-left img{
+		width: 100%;
+		height: 90px;
+	}
+	.inner-right{
+		height: 70%!important;
+	}
+	.inner-right .tabs{
+		width: 100%;
+	}
+	.inner-right .tabs ul li{
+		width: 150px;
+		height: 50px;
+
+	}
+	.inner-right .tabs ul li a i{
+	font-size: 20px;
+	margin-top: 10%;
+
+	}
+	.inner-right .tabs ul li a {
+		
+		margin-top: 0;
+	}
+	#about h1{
+		font-size: 15px;
+	}
+	#about h2{
+		font-size: 10px;
+	}
+	.research p,.Design p,.Work p{
+		font-size: 12px!important;
+	}
+}
+@media screen and (min-width: 1025px) and (max-width: 1359px){
+	.full-box{
+		width: 800px;
+		height: 424px;
+	}
+	.inner-left{
+		width: 20%;
+	}
+	.inner-left h1{
+		font-size: 15px;
+	}
+	.inner-left ul li{
+		font-size: 15px;
+	}
+	.inner-left img{
+		width: 100%;
+		height: 80px;
+	}
+	.inner-right{
+		height: 70%!important;
+	}
+	.inner-right .tabs{
+		width: 100%;
+	}
+	.inner-right .tabs ul li{
+		width: 150px;
+		height: 75px;
+
+	}
+	.inner-right .tabs ul li a i{
+	font-size: 20px;
+	margin-top: 10%;
+
+	}
+	.inner-right .tabs ul li a {
+		
+		margin-top: 0;
+	}
+	#about h1{
+		font-size: 15px;
+	}
+	#about h2{
+		font-size: 10px;
+	}
+	.research p,.Design p,.Work p{
+		font-size: 12px!important;
+	}
+}
+/* RESPONSIVE SITE */
